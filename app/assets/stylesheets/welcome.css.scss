@@ -1,0 +1,91 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'reset';
+@import 'compass/css3/transition';
+@import 'font-awesome';
+
+$color_light : #5EC9C6;
+$color_dark : #3796A4;
+
+a:link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header_holder {
+    background-color:$color_dark;
+    color:#FFFFFF;
+    font-size:30px;
+    padding:4px;
+    
+}
+
+.header {
+
+    width:1000px;
+    text-align:left;
+
+    
+}
+
+
+.float-left {
+    float:left;
+}
+
+.sidebar {
+    
+    background-color:$color_light;
+    text-align:center;  
+    width:150px;
+    left:-130px;
+    position:fixed;
+    
+    ul {
+        
+    }
+    
+    li {
+        @include transition-duration(1s);
+        padding:15px;
+    }
+    
+    li:hover {
+        background-color:$color-dark;
+    }
+    
+    a{
+        font-size:20px;
+        color:#FFFFFF;     
+    }
+    height:99999px;
+}
+
+#canvas_div {
+    padding-top : 60px;
+    background-color: #FFF;
+    width: 500px;
+    height: 500px;
+    
+}
+
+
